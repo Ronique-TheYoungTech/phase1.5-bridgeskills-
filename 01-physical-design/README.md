@@ -11,7 +11,7 @@ This mirrors real-world engineering workflows where whiteboarding precedes forma
 
 ### Hand-Drawn Concept Diagram
 
-![Hand-Drawn Physical Topology](./screenshots/physical-topology-handdrawn.jpg)
+![Hand-Drawn Physical Topology](./screenshots/physical-topology-handdrawn.jpeg)
 
 ### Final Digital Diagram
 
