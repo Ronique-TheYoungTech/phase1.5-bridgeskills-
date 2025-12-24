@@ -1,7 +1,7 @@
 ## Network Troubleshooting & Performance Optimization  
 ### Mock Incident Case Study
 
-![Troubleshooting Topology](screenshots/issue-diagram.png)
+![Troubleshooting Topology](screenshots/issue-diagram.drawio.png)
 
 ---
 
