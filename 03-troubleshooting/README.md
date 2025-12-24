@@ -1,79 +1,83 @@
-Network Troubleshooting & Performance Optimization
-Mock Incident Case Study
-Scenario Overview
+## Network Troubleshooting & Performance Optimization  
+### Mock Incident Case Study
+
+![Troubleshooting Topology](screenshots/issue-diagram.png)
+
+---
+
+### Scenario Overview
 
 Users reported slow network performance and intermittent connectivity when accessing internal application servers during business hours.
 
-The issue impacted multiple departments and was most noticeable during peak usage times.
+The issue impacted multiple departments and was most noticeable during peak usage periods. No complete outages were observed.
 
-Initial Symptoms
+---
 
-Slow application response times
+### Initial Symptoms
 
-Occasional packet loss
+- Slow application response times  
+- Occasional packet loss  
+- Users reporting intermittent “network drops”  
+- Degraded performance without total service failure  
 
-Users reporting “network drops”
+---
 
-No complete outages observed
+### Troubleshooting Methodology
 
-Troubleshooting Methodology
+A structured, layered troubleshooting approach was used, aligned with OSI model principles:
 
-A structured troubleshooting approach was used, following a layered (OSI-informed) methodology:
+1. Verified physical connectivity and interface status  
+2. Checked VLAN configuration and switch port assignments  
+3. Reviewed routing paths and default gateway configuration  
+4. Analyzed traffic flow and identified congestion points  
 
-Verified physical connectivity and interface status
+---
 
-Checked VLAN configuration and port assignments
+### Root Cause Identified
 
-Reviewed routing paths and gateway configuration
+The root cause was identified as an **improper VLAN trunk configuration**, which allowed unnecessary VLANs to propagate across trunk links.
 
-Analyzed traffic flow and potential congestion points
+This misconfiguration caused excessive broadcast traffic to traverse segments that did not require access, resulting in congestion and degraded performance during peak usage hours.
 
-Root Cause Identified
+---
 
-The root cause was identified as improper VLAN trunk configuration, causing excessive broadcast traffic to traverse unnecessary segments.
+### Resolution Steps
 
-This resulted in congestion and performance degradation during peak usage periods.
+- Corrected trunk port VLAN allowances  
+- Restricted unnecessary VLAN propagation  
+- Verified correct access VLAN assignments on edge ports  
+- Validated routing paths and gateway behavior  
 
-Resolution Steps
+---
 
-Corrected trunk port VLAN allowances
-
-Restricted unnecessary VLAN propagation
-
-Verified correct access VLAN assignments
-
-Validated routing and gateway behavior
-
-Performance Outcome
+### Performance Outcome
 
 After remediation:
 
-Latency was reduced
+- Network latency was reduced  
+- Packet loss was eliminated  
+- Application response times returned to normal  
+- Network stability improved during peak business hours  
 
-Packet loss was eliminated
+---
 
-Application performance returned to normal
+### Lessons Learned
 
-Network stability improved during peak hours
+- Proper VLAN segmentation is critical for network performance  
+- Misconfigured trunk ports can impact multiple departments  
+- A structured troubleshooting process prevents guesswork  
+- Clear documentation accelerates issue resolution  
 
-Lessons Learned
+---
 
-Proper VLAN segmentation is critical for performance
+### Optimization Recommendations
 
-Misconfigured trunks can cause widespread issues
+- Perform periodic configuration reviews  
+- Monitor traffic patterns during peak usage hours  
+- Maintain clear and updated VLAN documentation  
+- Enforce standardized change management procedures  
 
-Structured troubleshooting prevents guesswork
+---
 
-Documentation aids faster resolution
+📌 **Note:** This was a controlled mock scenario designed to demonstrate professional network troubleshooting and performance optimization methodology.
 
-Optimization Recommendations
-
-Periodic configuration reviews
-
-Traffic monitoring during peak hours
-
-Clear VLAN documentation
-
-Standardized change management
-
-📌 Note: This was a controlled mock scenario designed to demonstrate professional troubleshooting methodology.
