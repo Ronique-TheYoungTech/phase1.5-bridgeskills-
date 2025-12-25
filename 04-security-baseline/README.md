@@ -31,7 +31,7 @@ The environment consists of:
 - Core and access switching layers
 - Segmented VLANs for users, servers, and management
 
-![Baseline Topology](screenshots/baseline-topology.png)
+![Baseline Topology](screenshots/baseline-topology.drawio.png)
 
 ---
 
