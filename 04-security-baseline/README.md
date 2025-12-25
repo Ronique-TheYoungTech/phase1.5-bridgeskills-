@@ -23,7 +23,9 @@ The assessment covered:
 - Documentation and operational gaps
 
 ## Methodology
-This assessment was performed using a non-invasive review of the network’s existing documented topology and configuration artifacts. No active scanning, exploitation, or simulated attacks were performed. The assessment focused on logical architecture, segmentation, and configuration review.
+
+This assessment was conducted using a non-invasive review of network documentation, topology diagrams, and logical segmentation. No active scanning, penetration testing, or exploitation tools were used. Observations are based on configuration review and architectural inference.
+
 
 
 The assessment did not include:
@@ -41,6 +43,7 @@ The environment consists of:
 - Core and access switching layers
 - Segmented VLANs for users, servers, and management
 
+Figure 1 – Baseline Network Topology used for security observation.
 ![Baseline Topology](screenshots/baseline-topology.drawio.png)
 
 ---
