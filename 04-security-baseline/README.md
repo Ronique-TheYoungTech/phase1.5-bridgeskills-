@@ -83,9 +83,12 @@ The network demonstrates foundational security controls but would benefit from t
 
 This baseline assessment provides a starting point for targeted security improvements and ongoing network hardening.
 
-Author 
-Ronique Young
+---
 
-*Topology diagram created using draw.io (diagrams.net).*
+### 📄 Document Information
+
+**Author:** Ronique Young  
+**Diagram Tool:** Topology diagram created using draw.io (diagrams.net)
+
 
 
