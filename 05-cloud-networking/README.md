@@ -1,6 +1,13 @@
 # Cloud Network Fundamentals
 ## Sample Cloud Network Architecture
 
+## Deliverables
+
+- Cloud network conceptual diagram
+- Explanation of core cloud networking principles
+- Subnet and routing explanation
+
+
 ## Purpose
 This document demonstrates foundational cloud networking concepts, including virtual network design, segmentation, routing, and security boundaries.
 
@@ -26,11 +33,12 @@ The cloud network consists of:
 - Route tables governing traffic flow
 
 ![Cloud Network Topology](diagrams/cloud-network-topology.png)
+- Security groups / network security rules applied at the subnet boundary
 
 ---
 
 ## Traffic Flow Explanation
-- Internet traffic enters the cloud through the internet gateway
+-External traffic enters the virtual network through the internet gateway, where it can be routed to public resources or controlled to reach internal services.
 - Public subnet resources handle external communication
 - Private subnet resources are isolated from direct internet access
 - Internal traffic is restricted by routing and security rules
@@ -46,4 +54,12 @@ The cloud network consists of:
 
 ## Conclusion
 This architecture demonstrates foundational cloud networking principles required for secure and scalable deployments. These concepts form the basis for more advanced cloud and hybrid networking designs.
+
+---
+
+### 📄 Document Information
+
+**Author:** Ronique Young  
+**Diagram Tool:** Topology diagram created using draw.io (diagrams.net)
+
 
