@@ -43,8 +43,10 @@ The environment consists of:
 - Core and access switching layers
 - Segmented VLANs for users, servers, and management
 
-Figure 1 – Baseline Network Topology used for security observation.
-![Baseline Topology](screenshots/baseline-topology.drawio.png)
+<figure>
+<img src="screenshots/baseline-topology.png" alt="Baseline Network Topology"/>
+<figcaption>Figure 1: Baseline network architecture used in this assessment.</figcaption>
+</figure>
 
 ---
 
