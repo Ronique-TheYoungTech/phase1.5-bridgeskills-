@@ -16,6 +16,10 @@ The assessment covered:
 - Basic security hygiene and visibility
 - Documentation and operational gaps
 
+## Methodology
+This assessment was conducted by inspecting available network documentation, reviewing logical topology, and analyzing the presence and configuration of key security controls. No active scanning or simulated attacks were performed.
+
+
 The assessment did not include:
 - Active exploitation
 - Vulnerability scanning
