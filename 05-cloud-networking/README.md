@@ -15,6 +15,12 @@ The architecture presented is a conceptual example used to illustrate best pract
 
 ---
 
+## Methodology
+
+This architecture is a conceptual representation demonstrating key cloud network concepts. It is vendor-neutral and focuses on logical design principles without implementation-specific details.
+
+
+
 ## Cloud Concepts Covered
 - Virtual Private Cloud (VPC / VNet)
 - Public and private subnet separation
