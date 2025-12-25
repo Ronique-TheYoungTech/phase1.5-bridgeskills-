@@ -50,7 +50,8 @@ The environment consists of:
 ## Risk Assessment Summary
 
 ### High Risk
-- Broad trunk VLAN propagation increases lateral movement risk
+- VLAN trunk configured without strict controls, increasing potential for unnecessary broadcast propagation and lateral movement between security zones.
+
 
 ### Medium Risk
 - Management VLAN access not fully restricted
