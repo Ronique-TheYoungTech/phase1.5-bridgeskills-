@@ -23,7 +23,7 @@ The assessment covered:
 - Documentation and operational gaps
 
 ## Methodology
-This assessment was conducted by inspecting available network documentation, reviewing logical topology, and analyzing the presence and configuration of key security controls. No active scanning or simulated attacks were performed.
+This assessment was performed using a non-invasive review of the network’s existing documented topology and configuration artifacts. No active scanning, exploitation, or simulated attacks were performed. The assessment focused on logical architecture, segmentation, and configuration review.
 
 
 The assessment did not include:
@@ -82,4 +82,9 @@ The environment consists of:
 The network demonstrates foundational security controls but would benefit from tighter segmentation enforcement, improved access controls, and enhanced visibility.
 
 This baseline assessment provides a starting point for targeted security improvements and ongoing network hardening.
+
+Author 
+Ronique Young
+*Topology diagram created using draw.io (diagrams.net).*
+
 
