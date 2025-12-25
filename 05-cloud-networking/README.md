@@ -55,6 +55,8 @@ The cloud network consists of:
 - Separation of public and private subnets reduces attack surface
 - Security groups enforce least-privilege access
 - Private resources are not directly exposed to the internet
+- Security groups (or network security rules) restrict access within and between subnets.
+
 
 ---
 
