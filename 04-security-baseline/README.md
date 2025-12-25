@@ -2,6 +2,12 @@
 ## Mock Assessment Report
 
 ## Purpose
+## Deliverables
+- Baseline Network Topology Diagram
+- Security Baseline Assessment Report
+- Security Baseline Checklist
+
+
 This security baseline assessment evaluates the current network security posture by reviewing architecture, segmentation, access controls, and exposure points.
 
 This assessment is non-invasive and does not include penetration testing or exploitation.
