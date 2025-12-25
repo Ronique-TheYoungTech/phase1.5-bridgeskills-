@@ -44,7 +44,7 @@ The environment consists of:
 - Segmented VLANs for users, servers, and management
 
 <figure>
-<img src="screenshots/baseline-topology.png" alt="Baseline Network Topology"/>
+<img src="screenshots/baseline-topology.drawio.png" alt="Baseline Network Topology"/>
 <figcaption>Figure 1: Baseline network architecture used in this assessment.</figcaption>
 </figure>
 
