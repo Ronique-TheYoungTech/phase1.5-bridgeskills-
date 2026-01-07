@@ -95,7 +95,7 @@ Logging destination is 192.168.24.20 over UDP port 514
 Log messages are actively generated and counted
 
 Evidence
-![SYSLOG ENABLED](./screenshots/syslog-enabled.png)
+![SYSLOG ENABLED](./screenshots/snmp-enabled.png)
 
 ![SYSLOG CONFIGURATION](./screenshots/syslog-config.png)
 
