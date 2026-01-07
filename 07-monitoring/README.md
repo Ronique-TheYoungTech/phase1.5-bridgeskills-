@@ -65,8 +65,6 @@ Logs are being sent to 192.168.24.20 over UDP port 514
 Log messages are actively generated and counted
 
 Evidence
-
-./screenshots/syslog-simulation.png
 ![SYSLOG SIMULATION](./screenshots/syslog-simulation-proof.png)
  
 Platform Limitation (Syslog)
