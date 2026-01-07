@@ -7,14 +7,15 @@ Implement and validate foundational network monitoring mechanisms used in enterp
 - SNMP (device monitoring and telemetry)
 - NTP (time synchronization)
 
-This lab emphasizes correct configuration, router-side verification, and clear documentation of Cisco Packet Tracer limitations encountered during implementation.
+This lab emphasizes correct configuration, router-side verification, and honest documentation of Cisco Packet Tracer limitations encountered during implementation.
 
 ---
 
 ## Topology Overview
 
-**Diagram:** 
-![MONITORING ARCHITECTURE](./screenshots/monitoring-architecture.png)
+**Monitoring Architecture**
+
+![Monitoring Architecture](./diagrams/monitoring-architecture.png)
 
 ### Devices
 - Cisco 2901 Router
@@ -33,7 +34,7 @@ This lab emphasizes correct configuration, router-side verification, and clear d
 | Syslog Server | NIC | 192.168.24.20 /24 |
 
 **Evidence**
-- ![IP ROUTER CONFIGURATION](./screenshots/ip-router-config.png)
+- ![Router IP Configuration](./screenshots/ip-router-config.png)
 
 Proper Layer-3 connectivity is required for all monitoring services in this lab.
 
@@ -47,60 +48,25 @@ Syslog was enabled on the router and configured to forward log messages to a cen
 ```plaintext
 logging on
 logging 192.168.24.20
-
+```
 
 Verification
-
 Syslog functionality was validated using router-side verification commands:
 ```bash
 show logging
 ```
-
 This confirmed:
 
 Syslog logging is enabled
 
-Logs are being sent to 192.168.24.20 over UDP port 514
+Logs are sent to 192.168.24.20 over UDP port 514
 
 Log messages are actively generated and counted
 
-Evidence
-![SYSLOG SIMULATION](./screenshots/syslog-simulation-proof.png)
- 
-Platform Limitation (Syslog)
-
-Cisco Packet Tracer does not reliably surface SYSLOG packets in Simulation Mode and does not consistently populate the Syslog Server GUI.
-Syslog functionality was therefore validated using router-side logging status, which is the authoritative verification method used in production environments.
-
-SNMP Configuration
-
-SNMP was enabled on the router to allow read-only monitoring access.
-
-Configuration
-```bash
-snmp-server community public RO
-```
-
-Verification
-Syslog functionality was validated using router-side verification commands:
-```bash
-show logging 
-```
-This confirmed:
-
-Syslog logging is enabled
-
-Logging destination is 192.168.24.20 over UDP port 514
-
-Log messages are actively generated and counted
-
-Evidence
-![SYSLOG ENABLED](./screenshots/snmp-enabled.png)
-
+Evidence:
 ![SYSLOG CONFIGURATION](./screenshots/syslog-config.png)
 
-./screenshots/syslog-simulation-proof.png
-![SYSLOG SIMULATION(.screenshots/syslog-simulation.png)
+![SYSLOG SIMULATION PROOF](./screenshots/syslog-simulation-proof.png)
 
 Platform Limitation (Syslog)
 
@@ -108,25 +74,22 @@ Cisco Packet Tracer does not reliably surface SYSLOG packets in Simulation Mode 
 Syslog functionality was therefore validated using router-side logging status, which is the authoritative verification method used in production environments.
 
 SNMP Configuration
-
 SNMP was enabled on the router to allow read-only monitoring access.
 
 Configuration
 ```bash
 snmp-server community public RO
 ```
-
 Verification
 ```bash
 show running-config | include snmp
 ```
-
 This confirmed that the SNMP agent is enabled and a read-only community string is configured.
 
 Evidence
 ![SNMP CONFIGURATION](./screenshots/snmp-config.png)
 
-![SNMP SIMULATION](./screenshots/snmp-simulation-proof.png)
+![SNMP SIMULATION PROOF](./screenshots/snmp-simulation-proof.png)
 
 Platform Limitation (SNMP)
 
@@ -148,17 +111,14 @@ show running-config | include ntp
 show ntp status
 show clock
 ```
-These commands verified correct NTP configuration and router clock operation.
 
-Evidence
 ![NTP CONFIGURATION](./screenshots/ntp-config.png)
-
-./screenshots/ntp-status.png
 ![NTP STATUS](./screenshots/ntp-status.png)
 
 Platform Limitation (NTP)
 
-Packet Tracer may not fully synchronize time with public NTP servers. NTP validation was performed using configuration and status commands rather than time accuracy.
+Packet Tracer may not fully synchronize time with public NTP servers.
+NTP validation was performed using configuration and status commands rather than time accuracy.
 
 Key Takeaways
 
@@ -201,5 +161,11 @@ Track: CAINO — Bridge Skills
 Tools: Cisco Packet Tracer
 
 This lab was completed as part of a skills-first engineering path emphasizing router-side verification, honest documentation of tool limitations, and production-aligned troubleshooting methodology.
+
+
+
+
+
+
 
 
