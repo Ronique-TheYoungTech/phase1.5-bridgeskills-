@@ -13,7 +13,8 @@ This lab emphasizes correct configuration, router-side verification, and clear d
 
 ## Topology Overview
 
-**Diagram:** `./diagrams/monitoring-architecture.png`
+**Diagram:** 
+![MONITORING ARCHITECTURE](.screenshots/monitoring-architecture.png)
 
 ### Devices
 - Cisco 2901 Router
@@ -32,7 +33,7 @@ This lab emphasizes correct configuration, router-side verification, and clear d
 | Syslog Server | NIC | 192.168.24.20 /24 |
 
 **Evidence**
-- `./screenshots/ip-router-config.png`
+- ![IP ROUTER CONFIGURATION](.screenshots/ip-router-config.png)
 
 Proper Layer-3 connectivity is required for all monitoring services in this lab.
 
@@ -65,8 +66,9 @@ Log messages are actively generated and counted
 
 Evidence
 
-./screenshots/syslog-simulation-proof.png
-
+./screenshots/syslog-simulation.png
+![SYSLOG SIMULATION](.screenshots/syslog-simulation.png)
+ 
 Platform Limitation (Syslog)
 
 Cisco Packet Tracer does not reliably surface SYSLOG packets in Simulation Mode and does not consistently populate the Syslog Server GUI.
@@ -95,12 +97,12 @@ Logging destination is 192.168.24.20 over UDP port 514
 Log messages are actively generated and counted
 
 Evidence
+![SYSLOG ENABLED](.screenshots/syslog-enabled.png)
 
-./screenshots/syslog-enabled.png
-
-./screenshots/syslog-config.png
+![SYSLOG CONFIGURATION](.screenshots/syslog-config.png)
 
 ./screenshots/syslog-simulation-proof.png
+![SYSLOG SIMULATION(.screenshots/syslog-simulation.png)
 
 Platform Limitation (Syslog)
 
@@ -124,10 +126,9 @@ show running-config | include snmp
 This confirmed that the SNMP agent is enabled and a read-only community string is configured.
 
 Evidence
+![SNMP CONFIGURATION](.screenshots/snmp-config.png)
 
-./screenshots/snmp-config.png
-
-./screenshots/snmp-simulation-proof.png
+![SNMP SIMULATION](.screenshots/snmp-simulation.png)
 
 Platform Limitation (SNMP)
 
@@ -152,10 +153,10 @@ show clock
 These commands verified correct NTP configuration and router clock operation.
 
 Evidence
-
-./screenshots/ntp-config.png
+![NTP CONFIGURATION](.screenshots/ntp-config.png)
 
 ./screenshots/ntp-status.png
+![NTP STATUS](.screenshots/ntp-status.png)
 
 Platform Limitation (NTP)
 
