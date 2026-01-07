@@ -14,7 +14,7 @@ This lab emphasizes correct configuration, router-side verification, and clear d
 ## Topology Overview
 
 **Diagram:** 
-![MONITORING ARCHITECTURE](.screenshots/monitoring-architecture.png)
+![MONITORING ARCHITECTURE](./screenshots/monitoring-architecture.png)
 
 ### Devices
 - Cisco 2901 Router
