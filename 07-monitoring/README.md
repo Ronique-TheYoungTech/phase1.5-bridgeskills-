@@ -15,7 +15,7 @@ This lab emphasizes correct configuration, router-side verification, and honest 
 
 **Monitoring Architecture**
 
-![Monitoring Architecture](./diagrams/monitoring-architecture.png)
+![Monitoring Architecture](./screenshots/monitoring-architecture.png)
 
 ### Devices
 - Cisco 2901 Router
