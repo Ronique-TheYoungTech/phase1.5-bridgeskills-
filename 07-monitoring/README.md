@@ -7,7 +7,7 @@ Implement and validate foundational network monitoring mechanisms used in enterp
 - SNMP (device monitoring and telemetry)
 - NTP (time synchronization)
 
-This lab focuses on correct configuration, router-side verification, and clear documentation of Cisco Packet Tracer limitations encountered during implementation.
+This lab emphasizes correct configuration, router-side verification, and clear documentation of Cisco Packet Tracer limitations encountered during implementation.
 
 ---
 
@@ -46,7 +46,7 @@ Syslog was enabled on the router and configured to forward log messages to a cen
 ```plaintext
 logging on
 logging 192.168.24.20
-```
+
 
 Verification
 
@@ -82,9 +82,45 @@ snmp-server community public RO
 ```
 
 Verification
+Syslog functionality was validated using router-side verification commands:
+```bash
+show logging 
+```
+This confirmed:
+
+Syslog logging is enabled
+
+Logging destination is 192.168.24.20 over UDP port 514
+
+Log messages are actively generated and counted
+
+Evidence
+
+./screenshots/syslog-enabled.png
+
+./screenshots/syslog-config.png
+
+./screenshots/syslog-simulation-proof.png
+
+Platform Limitation (Syslog)
+
+Cisco Packet Tracer does not reliably surface SYSLOG packets in Simulation Mode and does not consistently populate the Syslog Server GUI.
+Syslog functionality was therefore validated using router-side logging status, which is the authoritative verification method used in production environments.
+
+SNMP Configuration
+
+SNMP was enabled on the router to allow read-only monitoring access.
+
+Configuration
+```bash
+snmp-server community public RO
+```
+
+Verification
 ```bash
 show running-config | include snmp
 ```
+
 This confirmed that the SNMP agent is enabled and a read-only community string is configured.
 
 Evidence
@@ -113,7 +149,6 @@ show running-config | include ntp
 show ntp status
 show clock
 ```
-
 These commands verified correct NTP configuration and router clock operation.
 
 Evidence
@@ -158,20 +193,14 @@ Status
 ✔ NTP configured and validated
 ✔ Platform limitations documented
 
----
+07-Monitoring (Bridge Skills) — COMPLETE
 
-### Author & Notes
+Author & Notes
 
-**Author:** Ronique Young  
-**Track:** CAINO — Bridge Skills  
-**Tools:** Cisco Packet Tracer  
+Author: Ronique Young
+Track: CAINO — Bridge Skills
+Tools: Cisco Packet Tracer
 
-This lab was completed as part of a structured, skills-first engineering path emphasizing:
-- Router-side verification
-- Honest documentation of tool limitations
-- Production-aligned troubleshooting methodology
-
-All configurations and validations reflect real-world operational practices, with Packet Tracer limitations explicitly noted where applicable.
-
+This lab was completed as part of a skills-first engineering path emphasizing router-side verification, honest documentation of tool limitations, and production-aligned troubleshooting methodology.
 
 
